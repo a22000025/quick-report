@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title> Quick Report</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>Quick Report</h1>
+<h3>PT Indo Global Karya Mulia</h3>
+</div>
+
+<div class="card">
+
+<h3>Produksi (rit)</h3>
+
+<table>
+
+<tr>
+<th>Shift</th>
+<th>K1</th>
+<th>K2</th>
+<th>K3</th>
+</tr>
+
+<tr>
+<td>Shift 1</td>
+<td><input id="k1s1" type="number"></td>
+<td><input id="k2s1" type="number"></td>
+<td><input id="k3s1" type="number"></td>
+</tr>
+
+<tr>
+<td>Shift 2</td>
+<td><input id="k1s2" type="number"></td>
+<td><input id="k2s2" type="number"></td>
+<td><input id="k3s2" type="number"></td>
+</tr>
+
+</table>
+
+
+<h3>Sell</h3>
+
+<table>
+
+<tr>
+<th>Material</th>
+<th>Shift 1</th>
+<th>Shift 2</th>
+</tr>
+
+<tr>
+<td>Crusher</td>
+<td><input id="sellc1" type="number"></td>
+<td><input id="sellc2" type="number"></td>
+</tr>
+
+<tr>
+<td>Bronjong</td>
+<td><input id="sellb1" type="number"></td>
+<td><input id="sellb2" type="number"></td>
+</tr>
+
+<tr>
+<td>XCMG</td>
+<td><input id="sellx1" type="number"></td>
+<td><input id="sellx2" type="number"></td>
+</tr>
+
+</table>
+
+
+<h3>Raw</h3>
+
+<table>
+
+<tr>
+<th>Material</th>
+<th>Shift 1</th>
+<th>Shift 2</th>
+</tr>
+
+<tr>
+<td>Raw Material</td>
+<td><input id="raw1" type="number"></td>
+<td><input id="raw2" type="number"></td>
+</tr>
+
+</table>
+
+
+<br>
+
+<button onclick="hitung()">Buat Report</button>
+
+<button onclick="copyReport()" class="copy-btn">
+Copy Report
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Hasil Quick Report</h3>
+
+<pre class="report" id="hasil"></pre>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+<link rel="manifest" href="manifest.json">
+
+</body>
+</html>
